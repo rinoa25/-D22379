@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- text direction is set to left to right -->
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- Sets title of web tab -->
+    <title>Ontario Tech WIT Merchandise</title>
+    <!-- Sets favicon (WIT logo applied as icon image in browser tab)-->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <!-- Personal CSS is imported (thus applied)-->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- JQuery is imported (thus applied)-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- style media="screen" allows us to specify what we want to do on different sized screens -->
+    <style media="screen"></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <header>
+      <!-- WIT long logo -->
+      <a class="logo" href="index.html"><img src="images/WITLogo2.png" alt="logo" style="width:13em;height:5em;"></a>
+      <!-- Menu options -->
+      <nav>
+        <ul class="nav__links">
+          <li><a href="index.html" class="hover-underline-animation">Home</a></li>
+          <li><a href="shop.html" class="hover-underline-animation">Shop</a></li>
+          <li><a href="about.html" class="hover-underline-animation">About</a></li>
+        </ul>
+      </nav>
+        <a class="cta" href="shoppingcart.html">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9l-56.4 315.8l-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z"/></svg>
+          <p class="modifiedTotal">0 / $0.00 CAD</p>
+        </a>
+        <p class="menu cta">Menu</p>
+    </header>
+
+    <!-- Responsive mini menu  -->
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+          <a href="index.html" class="hover-underline-animation">Home</a>
+          <a href="shop.html" class="hover-underline-animation">Shop</a>
+          <a href="about.html" class="hover-underline-animation">About</a>
+          <a href="shoppingcart.html" class="hover-underline-animation">Cart</a>
+        </div>
+    </div>
+
+    <div class="spacer" style="width:100%;">
+      &nbsp;
+    </div>
+
+    <div class="content">
+
+      <div id="wrapper">
+        <button class="shopBtn active" onclick="categorize('all')"> All Types<button>
+        <button class="shopBtn" onclick="categorize('accessories')"> Accessories</button>
+        <button class="shopBtn" onclick="categorize('clothing')"> Clothing</button>
+        <button class="shopBtn" onclick="categorize('drinkwares')"> Drinkware</button>
+        <button class="shopBtn" onclick="categorize('stationary')"> Stationary</button>
+      </div><br>
+
+      <div class="row">
+
+        <div class="shopcol clothing">
+          <div class="shopcard">
+            <img src="images/1.1. Navy Shirt.png" style="width:100%">
+            <h4>Navy Shirt</h4>
+            <p>Description</p>
+          </div>
+        </div>
+
+        <div class="shopcol clothing">
+          <div class="shopcard">
+            <img src="images/2.1. White Shirt.png" style="width:100%">
+            <h4>White Shirt</h4>
+            <p>Description</p>
+          </div>
+        </div>
+
+        <div class="shopcol accessories">
+          <div class="shopcard">
+            <img src="images/3. Tote Bag.png" style="width:100%">
+            <h4>Tote Bag</h4>
+            <p>Description</p>
+          </div>
+        </div>
+
+        <div class="shopcol clothing">
+          <div class="shopcard">
+            <img src="images/4.1. Blue Sweater.png" style="width:100%">
+            <h4>Blue Sweater</h4>
+            <p>Description</p>
+          </div>
+        </div>
+
+        <div class="shopcol clothing">
+          <div class="shopcard">
+            <img src="images/5.1. White Sweater.png" style="width:100%">
+            <h4>White Sweater</h4>
+            <p>Description</p>
+          </div>
+        </div>
+
+        <div class="shopcol accessories">
+          <div class="shopcard">
+            <img src="images/9.Scrunchie.png" style="width:100%">
+            <h4>Scrunchie</h4>
+            <p>Description</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+    const doc = document;
+    const menuOpen = doc.querySelector(".menu");
+    const menuClose = doc.querySelector(".close");
+    const overlay = doc.querySelector(".overlay");
+
+    menuOpen.addEventListener("click", () => {
+      overlay.classList.add("overlay--active");
+    });
+
+    menuClose.addEventListener("click", () => {
+      overlay.classList.remove("overlay--active");
+    });
+    function categorize(category) {
+      var i;
+      var type = document.getElementsByClassName("shopcol");
+      if (category == "all") category = "";
+      for (i = 0; i < type.length; i++) {
+        remove(type[i], "allTypes");
+        if (type[i].className.indexOf(category) > -1) add(type[i], "allTypes");
+      }
+    }
+    categorize("all")
+    // Adds publication to correct category
+    function add(publication, type) {
+      var i;
+      var comparison1 = publication.className.split(" ");
+      var comparison2 = type.split(" ");
+      for (i = 0; i < comparison2.length; i++) {
+        if (comparison1.indexOf(comparison2[i]) == -1) {publication.className += " "
+        + comparison2[i];}
+      }
+    }
+    // Removes publication
+    function remove(publication, type) {
+      var i;
+      var comparison1 = publication.className.split(" ");
+      var comparison2 = type.split(" ");
+      for (i = 0; i < comparison2.length; i++) {
+        while (comparison1.indexOf(comparison2[i]) > -1) {
+          comparison1.splice(comparison1.indexOf(comparison2[i]), 1);
+        }
+      }
+      publication.className = comparison1.join(" ");
+    }
+    </script>
+
+    <!-- Script points towards my JS file -->
+    <!-- <script src = "js/home.js"></script> -->
+
+  </body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart UI</title>
+	<link rel="stylesheet" type="text/css" href="css/master.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<!-- WIT long logo -->
+		<a class="logo" href="index.html"><img src="images/WITLogo2.png" alt="logo" style="width:13em;height:5em;"></a>
+		<!-- Menu options -->
+		<nav>
+			<ul class="nav__links">
+					<li><a href="index.html" class="hover-underline-animation">Home</a></li>
+					<li><a href="shop.html" class="hover-underline-animation">Shop</a></li>
+					<li><a href="about.html" class="hover-underline-animation">About</a></li>
+			</ul>
+		</nav>
+			<a class="cta" href="shoppingcart.html">
+				<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9l-56.4 315.8l-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z"/></svg>
+				<p class="modifiedTotal">0 / $0.00 CAD</p>
+			</a>
+			<p class="menu cta">Menu</p>
+	</header>
+
+	<!-- Responsive mini menu  -->
+	<div class="overlay">
+			<a class="close">&times;</a>
+			<div class="overlay__content">
+				<a href="index.html" class="hover-underline-animation">Home</a>
+				<a href="shop.html" class="hover-underline-animation">Shop</a>
+				<a href="about.html" class="hover-underline-animation">About</a>
+				<a href="shoppingcart.html" class="hover-underline-animation">Cart</a>
+			</div>
+	</div>
+
+	<div class="content">
+
+		<div class="CartContainer">
+    	   <div class="Header">
+    	   	<h3 class="Heading">Shopping Cart</h3>
+    	   	<h5 class="Action">Remove all</h5>
+    	   </div>
+
+    	   <div class="Cart-Items">
+    	   	  <div class="image-box">
+    	   	  	<img src="images/1.1. Navy Shirt.png" style={{ height="120px" }} />
+    	   	  </div>
+    	   	  <div class="about">
+    	   	  	<h1 class="title"> Navy Shirt</h1>
+
+    	   	  </div>
+    	   	  <div class="counter">
+    	   	  	<div class="btn">+</div>
+    	   	  	<div class="count">2</div>
+    	   	  	<div class="btn">-</div>
+    	   	  </div>
+    	   	  <div class="prices">
+    	   	  	<div class="amount">$2.99</div>
+    	   	  	<div class="save"><u>Save for later</u></div>
+    	   	  	<div class="remove"><u>Remove</u></div>
+    	   	  </div>
+    	   </div>
+
+    	   <div class="Cart-Items pad">
+    	   	  <div class="image-box">
+    	   	  	<img src="images/4.1. Blue Sweater.png" style={{ height="120px" }} />
+    	   	  </div>
+    	   	  <div class="about">
+    	   	  	<h1 class="title">Blue Sweater </h1>
+    	   	  </div>
+    	   	  <div class="counter">
+    	   	  	<div class="btn">+</div>
+    	   	  	<div class="count">1</div>
+    	   	  	<div class="btn">-</div>
+    	   	  </div>
+    	   	  <div class="prices">
+    	   	  	<div class="amount">$3.19</div>
+    	   	  	<div class="save"><u>Save for later</u></div>
+    	   	  	<div class="remove"><u>Remove</u></div>
+    	   	  </div>
+    	   </div>
+    	 <hr>
+    	 <div class="checkout">
+    	 <div class="total">
+    	 	<div>
+    	 		<div class="Subtotal">Sub-Total</div>
+    	 		<div class="items">2 items</div>
+    	 	</div>
+    	 	<div class="total-amount">$6.18</div>
+    	 </div>
+    	 <button class="button">Checkout</button></div>
+    </div>
+
+	</div>
+
+   <style>
+
+.content {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.CartContainer{
+	width: 70%;
+	height: 90%;
+	background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #1687d933;
+}
+
+.Header{
+	margin: auto;
+	width: 90%;
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Heading{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #2F3841;
+}
+
+.Action{
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #E44C4C;
+	cursor: pointer;
+	border-bottom: 1px solid #E44C4C;
+}
+
+.Cart-Items{
+	margin: auto;
+	width: 90%;
+	height: 30%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.image-box{
+	width: 15%;
+	text-align: center;
+}
+.about{
+	height: 100%;
+	width: 24%;
+}
+.title{
+	padding-top: 10px;
+	line-height: 10px;
+	font-size: 24px;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #202020;
+}
+.subtitle{
+	line-height: 10px;
+	font-size: 18px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #909090;
+}
+
+.counter{
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.btn{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+	cursor: pointer;
+}
+.count{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #202020;
+}
+
+.prices{
+	height: 100%;
+	text-align: right;
+}
+.amount{
+	padding-top: 20px;
+	font-size: 26px;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #202020;
+}
+.save{
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #1687d9;
+	cursor: pointer;
+}
+.remove{
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #E44C4C;
+	cursor: pointer;
+}
+
+.pad{
+	margin-top: 5px;
+}
+
+hr{
+	width: 66%;
+	float: right;
+	margin-right: 5%;
+}
+.checkout{
+	float: right;
+	margin-right: 5%;
+	width: 28%;
+}
+.total{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.Subtotal{
+	font-size: 22px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #202020;
+}
+.items{
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 500;
+	color: #909090;
+	line-height: 10px;
+}
+.total-amount{
+	font-size: 36px;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+}
+.button{
+	margin-top: 10px;
+	width: 100%;
+	height: 40px;
+	border: none;
+	background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #202020;
+}
+   </style>
+</body>
+</html>
